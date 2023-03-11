@@ -1,0 +1,106 @@
+.header {
+  background-color: $color-black-pearl;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  @include vp-1023 {
+    align-items: flex-start;
+    width: 650px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-767 {
+    width: 259px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__logo-icon {
+  margin-right: 15px;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+}
+
+.header__logo-text {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.header__contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+  min-width: 225px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+
+    @include vp-1023 {
+      margin-right: 20px;
+    }
+  }
+
+  @include vp-1023 {
+    min-width: 40px;
+    padding: 10px;
+  }
+}
+
+.header__contacts-link-text {
+  color: $color-alice-blue;
+  font-family: $ff-addition;
+  line-height: 18px;
+  padding-left: 15px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.header__modal-button {
+  width: 160px;
+  padding: 10px 15px;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
+  background-color: $color-transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  cursor: pointer;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
