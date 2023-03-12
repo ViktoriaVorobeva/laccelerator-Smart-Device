@@ -1,0 +1,136 @@
+.main-screen {
+  position: relative;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  background-image: $black-pearl-to-bottom;
+
+  @include vp-1023 {
+    padding-top: 170px;
+    padding-bottom: 205px;
+  }
+
+  @include vp-767 {
+    padding-top: 137px;
+    padding-bottom: 190px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    content: "";
+    z-index: -1;
+    background-image: url('/img/main-background/main-background@1x.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: url('/img/main-background/main-background@2x.webp');
+    }
+
+    @include vp-1023 {
+      height: 640px;
+      background-position: -123px 0;
+    }
+
+    @include vp-767 {
+      height: 560px;
+      background-position: -229px 0;
+    }
+  }
+}
+
+.main-screen__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 127px;
+
+  @include vp-1023 {
+    max-width: 650px;
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    max-width: 271px;
+  }
+}
+
+.main-screen__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main-screen__text {
+  max-width: 685px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $ff-addition;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    max-width: 670px;
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+
+  @include vp-767 {
+    max-width: 271px;
+    font-size: 14px;
+  }
+}
+
+.main-screen__link {
+  display: block;
+  max-width: 410px;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  background-color: $color-deep-sky-blue;
+  border-radius: 3px;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: $color-silver;
+  }
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    padding: 10px 30px;
+    margin-left: 0;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
