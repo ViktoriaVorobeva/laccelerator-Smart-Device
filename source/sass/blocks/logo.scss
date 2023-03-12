@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}
+
+.logo__icon {
+  margin-right: 15px;
+  fill: $color-deep-sky-blue;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+}
+
+.logo__text {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.logo:active .logo__icon {
+  opacity: 0.5;
+}
+
+.logo:active .logo__text {
+  opacity: 0.5;
+}

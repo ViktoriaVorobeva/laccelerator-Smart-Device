@@ -1,0 +1,59 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 160px;
+
+  @include vp-1023 {
+    margin-right: 0;
+    margin-bottom: 35px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.socials__logo {
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+}
+
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 12px;
+
+  @include vp-1023 {
+    margin-left: 0;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.socials__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}
+
+.socials__link-icon {
+  fill: $color-tory-blue;
+}
+
+.socials__link:active .socials__link-icon {
+  opacity: 0.5;
+}
