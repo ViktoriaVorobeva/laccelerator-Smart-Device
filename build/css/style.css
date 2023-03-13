@@ -1617,6 +1617,7 @@ button,
   color: rgba(255, 255, 255, 0.7);
   font-family: "PT Mono", monospace;
   line-height: 135%;
+  font-style: normal;
 }
 
 .accordion__link:not(:last-child) {

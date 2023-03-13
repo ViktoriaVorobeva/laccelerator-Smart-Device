@@ -79,7 +79,7 @@
     margin-bottom: 15px;
   }
 
-  .accordion--show + .accordion__button::after {
+  .accordion--show+.accordion__button::after {
     display: none;
   }
 }
@@ -89,6 +89,7 @@
   color: $color-dark-white;
   font-family: $ff-addition;
   line-height: 135%;
+  font-style: normal;
 
   &:not(:last-child) {
     margin-bottom: 10px;
