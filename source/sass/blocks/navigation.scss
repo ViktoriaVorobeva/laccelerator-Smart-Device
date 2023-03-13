@@ -1,10 +1,27 @@
 .navigation {
   max-width: 470px;
   margin-right: 30px;
+  position: relative;
 
   @include vp-1023 {
     margin-right: 0;
     max-width: 220px;
+  }
+
+  @include vp-767 {
+    max-width: 269px;
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      width: 1000%;
+      height: 1px;
+      content: "";
+      bottom: -23px;
+      left: -498px;
+      right: 0;
+      background-color: $color-alice-blue-lighter;
+    }
   }
 }
 
@@ -16,6 +33,35 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.navigation__button {
+  display: none;
+
+  @include vp-767 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: $color-transparent;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 7px;
+      width: 15px;
+      height: 1px;
+      content: "";
+      background-color: $color-tory-blue;
+    }
+  }
 }
 
 .navigation__list {
@@ -30,6 +76,38 @@
   @include vp-1023 {
     columns: none;
     height: auto;
+  }
+}
+
+@include vp-767 {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--closed .navigation__title {
+    margin-bottom: 0;
+  }
+
+  .navigation--closed .navigation__button::before {
+    position: absolute;
+    right: 7px;
+    top: 0;
+    width: 1px;
+    height: 15px;
+    content: "";
+    background-color: $color-tory-blue;
+  }
+
+  .navigation--opened .navigation__list {
+    display: block;
+  }
+
+  .navigation--opened .navigation__title {
+    margin-bottom: 15px;
+  }
+
+  .navigation--opened + .navigation__button::after {
+    display: none;
   }
 }
 

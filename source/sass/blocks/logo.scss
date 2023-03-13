@@ -21,6 +21,11 @@
 .logo__text {
   @include vp-767 {
     display: none;
+
+    &--footer {
+      display: block;
+      margin-left: 15px;
+    }
   }
 }
 

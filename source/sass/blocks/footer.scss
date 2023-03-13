@@ -16,8 +16,9 @@
   }
 
   @include vp-767 {
-    max-width: 259px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    max-width: 269px;
+    padding-top: 35px;
+    padding-bottom: 55px;
+    flex-direction: column;
   }
 }

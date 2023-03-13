@@ -3,6 +3,8 @@ const mainScreenButton = document.querySelector('.main-screen__link');
 const breakpointChecker = () => {
   if (breakpoint.matches) {
     mainScreenButton.textContent = 'бесплатная консультация';
+  } else {
+    mainScreenButton.textContent = 'Получить бесплатную консультацию';
   }
 };
 breakpoint.addListener(breakpointChecker);
