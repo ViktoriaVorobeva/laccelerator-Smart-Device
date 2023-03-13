@@ -1562,20 +1562,6 @@ button,
   position: relative;
 }
 
-.navigation__title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.navigation__button {
-  display: none;
-}
-
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -1592,34 +1578,27 @@ button,
   column-fill: auto;
 }
 
-.navigation__item:not(:last-child) {
+.navigation__link {
   margin-bottom: 10px;
 }
 
-.navigation__item:nth-child(4n) {
+.navigation__link:nth-child(4n) {
   margin-bottom: 0;
-}
-
-.navigation__link {
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "PT Mono", monospace;
-  line-height: 135%;
-}
-
-.navigation__link.focus-visible:focus {
-  opacity: 0.7;
-}
-
-.navigation__link:active {
-  color: #f2f5f6;
 }
 
 .contacts {
   position: relative;
 }
 
-.contacts__title {
+.contacts__address {
+  max-width: 345px;
+}
+
+.contacts__address-text {
+  margin: 0;
+}
+
+.accordion__title {
   margin: 0;
   margin-bottom: 20px;
   font-size: 15px;
@@ -1629,31 +1608,26 @@ button,
   color: #ffffff;
 }
 
-.contacts__button {
+.accordion__button {
   display: none;
 }
 
-.contacts__address {
-  max-width: 345px;
-}
-
-.contacts__address-text {
+.accordion__link {
   display: block;
   color: rgba(255, 255, 255, 0.7);
   font-family: "PT Mono", monospace;
   line-height: 135%;
-  font-style: normal;
 }
 
-.contacts__address-text:not(:last-child) {
+.accordion__link:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.contacts__address-text.focus-visible:focus {
+.accordion__link.focus-visible:focus {
   opacity: 0.7;
 }
 
-.contacts__address-text:active {
+.accordion__link:active {
   color: #f2f5f6;
 }
 
@@ -1807,7 +1781,7 @@ button,
     height: auto;
   }
 
-  .navigation__item:nth-child(4n) {
+  .navigation__link:nth-child(4n) {
     margin-bottom: 10px;
   }
 
@@ -1933,77 +1907,11 @@ button,
     margin-bottom: 40px;
   }
 
-  .navigation::after {
-    position: absolute;
-    width: 1000%;
-    height: 1px;
-    content: "";
-    bottom: -23px;
-    left: -498px;
-    right: 0;
-    background-color: rgba(248, 253, 255, 0.7);
-  }
-
-  .navigation__title {
-    margin-bottom: 15px;
-  }
-
-  .navigation__button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 15px;
-    height: 15px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-  }
-
-  .navigation__button::after {
-    position: absolute;
-    right: 0;
-    top: 7px;
-    width: 15px;
-    height: 1px;
-    content: "";
-    background-color: #f8fdff;
-  }
-
-  .navigation--closed .navigation__list {
-    display: none;
-  }
-
-  .navigation--closed .navigation__title {
-    margin-bottom: 0;
-  }
-
-  .navigation--closed .navigation__button::before {
-    position: absolute;
-    right: 7px;
-    top: 0;
-    width: 1px;
-    height: 15px;
-    content: "";
-    background-color: #f8fdff;
-  }
-
-  .navigation--opened .navigation__list {
-    display: block;
-  }
-
-  .navigation--opened .navigation__title {
-    margin-bottom: 15px;
-  }
-
-  .navigation--opened + .navigation__button::after {
-    display: none;
-  }
-
   .contacts {
     margin-left: 0;
   }
 
-  .contacts::after {
+  .accordion::after {
     position: absolute;
     width: 1000%;
     height: 1px;
@@ -2014,11 +1922,11 @@ button,
     background-color: rgba(248, 253, 255, 0.7);
   }
 
-  .contacts__title {
+  .accordion__title {
     margin-bottom: 15px;
   }
 
-  .contacts__button {
+  .accordion__button {
     position: absolute;
     top: 0;
     right: 0;
@@ -2029,7 +1937,7 @@ button,
     background-color: rgba(255, 255, 255, 0);
   }
 
-  .contacts__button::after {
+  .accordion__button::after {
     position: absolute;
     right: 0;
     top: 7px;
@@ -2039,15 +1947,15 @@ button,
     background-color: #f8fdff;
   }
 
-  .contacts--closed .contacts__address {
+  .accordion:not(.accordion--show) .accordion__list {
     display: none;
   }
 
-  .contacts--closed .contacts__title {
+  .accordion:not(.accordion--show) .accordion__title {
     margin-bottom: 0;
   }
 
-  .contacts--closed .contacts__button::before {
+  .accordion:not(.accordion--show) .accordion__button::before {
     position: absolute;
     right: 7px;
     top: 0;
@@ -2057,15 +1965,15 @@ button,
     background-color: #f8fdff;
   }
 
-  .contacts--opened .contacts__address {
+  .accordion--show .accordion__list {
     display: block;
   }
 
-  .contacts--opened .contacts__title {
+  .accordion--show .accordion__title {
     margin-bottom: 15px;
   }
 
-  .contacts--opened + .contacts__button::after {
+  .accordion--show + .accordion__button::after {
     display: none;
   }
 }
@@ -2166,11 +2074,7 @@ button,
     opacity: 0.7;
   }
 
-  .navigation__link:hover:not(.focus-visible) {
-    opacity: 0.7;
-  }
-
-  .contacts__address-text:hover:not(.focus-visible) {
+  .accordion__link:hover:not(.focus-visible) {
     opacity: 0.7;
   }
 }

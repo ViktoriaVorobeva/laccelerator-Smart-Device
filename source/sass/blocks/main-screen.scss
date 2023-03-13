@@ -22,12 +22,12 @@
     height: 880px;
     content: "";
     z-index: -1;
-    background-image: url('/img/main-background/main-background@1x.webp');
+    background-image: url("/img/main-background/main-background@1x.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include retina {
-      background-image: url('/img/main-background/main-background@2x.webp');
+      background-image: url("/img/main-background/main-background@2x.webp");
     }
 
     @include vp-1023 {
