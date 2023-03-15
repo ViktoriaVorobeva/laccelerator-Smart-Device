@@ -16,6 +16,7 @@
 .accordion__title {
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -79,7 +80,7 @@
     margin-bottom: 15px;
   }
 
-  .accordion--show+.accordion__button::after {
+  .accordion--show + .accordion__button::after {
     display: none;
   }
 }

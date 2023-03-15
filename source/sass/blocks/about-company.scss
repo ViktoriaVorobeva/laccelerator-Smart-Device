@@ -1,0 +1,120 @@
+.about-company {
+  position: relative;
+  margin: 0 auto 100px;
+  max-width: 1220px;
+  padding-left: 252px;
+
+  &::before {
+    position: absolute;
+    width: 150px;
+    height: 320px;
+    top: 0;
+    left: 0;
+    background-image: url("/img/about-company@1x.webp");
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include retina {
+      background-image: url("/img/about-company@2x.webp");
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+    max-width: 674px;
+    padding-left: 179px;
+  }
+
+  @include vp-767 {
+    max-width: 270px;
+    padding-left: 0;
+  }
+}
+
+.about-company__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-black-pearl;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about-company__text-container {
+  margin-bottom: 45px;
+
+  @include vp-1023 {
+    margin-bottom: 20px;
+  }
+}
+
+.about-company__text {
+  margin: 0;
+  font-family: $ff-addition;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+
+    @include vp-767 {
+      margin-bottom: 29px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about-company__text-mobile {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about-company__more {
+  display: none;
+}
+
+.about-company__button {
+  min-width: 180px;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  padding: 14px 13px 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: $color-transparent;
+  color: $color-deep-sky-blue;
+  cursor: pointer;
+
+  @include hover-focus {
+    background-color: $color-deep-sky-blue;
+    color: $color-alice-blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include vp-767 {
+    max-width: 160px;
+    padding: 8px 15px 12px;
+  }
+}
