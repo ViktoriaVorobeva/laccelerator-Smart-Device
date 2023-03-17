@@ -1298,7 +1298,7 @@ button,
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .header__wrapper {
@@ -1621,6 +1621,126 @@ button,
   opacity: 0.5;
 }
 
+.catalog {
+  background-color: #041827;
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+
+.catalog__container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.catalog__text {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.catalog__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.product {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product:first-child {
+  background-image: url("/img/catalog/product-1@1x.webp");
+  background-image: -webkit-image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
+  background-image: image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
+}
+
+.product:nth-child(2) {
+  background-image: url("/img/catalog/product-2@1x.webp");
+  background-image: -webkit-image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
+  background-image: image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
+}
+
+.product:last-child {
+  background-image: url("/img/catalog/product-3@1x.webp");
+  background-image: -webkit-image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
+  background-image: image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
+}
+
+.product::before {
+  position: absolute;
+  background-color: rgba(4, 24, 39, 0.5);
+  width: 100%;
+  height: 650px;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.product.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.product:active {
+  opacity: 0.5;
+}
+
+.product__link {
+  display: block;
+  width: 350px;
+  height: 650px;
+  padding: 50px 80px 50px 40px;
+  cursor: pointer;
+}
+
+.product__title {
+  margin: 0;
+  max-width: 152px;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  z-index: 3;
+}
+
+.product__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #00b2ff;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  background-image: url("/img/catalog/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.product__button.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.product__button:active {
+  background-color: rgba(0, 178, 255, 0.5);
+}
+
 .footer {
   background-color: #041827;
 }
@@ -1902,6 +2022,60 @@ button,
     margin-bottom: 20px;
   }
 
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .catalog__container {
+    max-width: 670px;
+  }
+
+  .catalog__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .product:first-child {
+    background-image: url("/img/catalog/product-1-tablet@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
+  }
+
+  .product:nth-child(2) {
+    background-image: url("/img/catalog/product-2-tablet@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
+  }
+
+  .product:last-child {
+    background-image: url("/img/catalog/product-3-tablet@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
+  }
+
+  .product::before {
+    height: 250px;
+  }
+
+  .product__link {
+    padding-top: 40px;
+    padding-left: 45px;
+    width: 670px;
+    height: 250px;
+  }
+
+  br {
+    display: none;
+  }
+
   .footer__wrapper {
     max-width: 675px;
     padding-bottom: 65px;
@@ -2086,6 +2260,53 @@ button,
   .about-company__button {
     max-width: 160px;
     padding: 8px 15px 12px;
+  }
+
+  .catalog {
+    padding-bottom: 86px;
+  }
+
+  .catalog__container {
+    max-width: 270px;
+  }
+
+  .catalog__text {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 40px;
+    max-width: 200px;
+  }
+
+  .product:first-child {
+    background-image: url("/img/catalog/product-1-phone@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
+  }
+
+  .product:nth-child(2) {
+    background-image: url("/img/catalog/product-2-phone@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
+  }
+
+  .product:last-child {
+    background-image: url("/img/catalog/product-3-phone@1x.webp");
+    background-image: -webkit-image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
+    background-image: image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
+  }
+
+  .product__link {
+    padding: 30px;
+    width: 270px;
+  }
+
+  .product__title {
+    font-size: 18px;
+  }
+
+  .product__button {
+    width: 40px;
+    height: 40px;
   }
 
   .footer__wrapper {
@@ -2308,6 +2529,14 @@ button,
   .about-company__button:hover:not(.focus-visible) {
     background-color: #00b2ff;
     color: #f2f5f6;
+  }
+
+  .product:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .product__button:hover:not(.focus-visible) {
+    opacity: 0.7;
   }
 
   .socials__link:hover:not(.focus-visible) {

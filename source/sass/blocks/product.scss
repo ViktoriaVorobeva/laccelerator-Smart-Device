@@ -1,0 +1,143 @@
+.product {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:first-child {
+    background-image: url("/img/catalog/product-1@1x.webp");
+    background-image: image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: url("/img/catalog/product-1-tablet@1x.webp");
+      background-image: image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: url("/img/catalog/product-1-phone@1x.webp");
+      background-image: image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url("/img/catalog/product-2@1x.webp");
+    background-image: image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: url("/img/catalog/product-2-tablet@1x.webp");
+      background-image: image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: url("/img/catalog/product-2-phone@1x.webp");
+      background-image: image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
+    }
+  }
+
+  &:last-child {
+    background-image: url("/img/catalog/product-3@1x.webp");
+    background-image: image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
+
+    @include vp-1023 {
+      background-image: url("/img/catalog/product-3-tablet@1x.webp");
+      background-image: image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
+    }
+
+    @include vp-767 {
+      background-image: url("/img/catalog/product-3-phone@1x.webp");
+      background-image: image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    background-color: $color-black-pearl-lighter;
+    width: 100%;
+    height: 650px;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    @include vp-1023 {
+      height: 250px;
+    }
+  }
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.product__link {
+  display: block;
+  width: 350px;
+  height: 650px;
+  padding: 50px 80px 50px 40px;
+  cursor: pointer;
+
+  @include vp-1023 {
+    padding-top: 40px;
+    padding-left: 45px;
+    width: 670px;
+    height: 250px;
+  }
+
+  @include vp-767 {
+    padding: 30px;
+    width: 270px;
+  }
+}
+
+.product__title {
+  margin: 0;
+  max-width: 152px;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+  z-index: 3;
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+@include vp-1023 {
+  br {
+    display: none;
+  }
+}
+
+.product__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: $color-deep-sky-blue;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  background-image: url("/img/catalog/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
+  z-index: 3;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue-light;
+  }
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+}

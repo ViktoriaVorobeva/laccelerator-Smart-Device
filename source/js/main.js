@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {breakpointChecker} from './modules/breakpoints';
 import {showMoreAbout, breakpointShowChecker} from './modules/about-company-show';
+import {breakpointCatalogChecker} from './modules/check-products';
 import {addAccordion} from './modules/accordion';
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     breakpointShowChecker();
     showMoreAbout();
+    breakpointCatalogChecker();
     addAccordion();
   });
 });
