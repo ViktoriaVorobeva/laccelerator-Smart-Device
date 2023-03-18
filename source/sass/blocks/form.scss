@@ -122,7 +122,7 @@
   border-radius: 2px;
 }
 
-.form__field--checkbox input:checked+.form__field-mark::after {
+.form__field--checkbox input:checked + .form__field-mark::after {
   position: absolute;
   background-image: url("/img/svg/check.svg");
   top: 3px;
@@ -146,27 +146,27 @@
   padding-left: 26px;
 }
 
-.form__field--checkbox input:hover+.form__field-mark {
+.form__field--checkbox input:hover + .form__field-mark {
   border-color: $color-silver;
 }
 
-.form__field--checkbox input:hover+.form__field-mark::after {
+.form__field--checkbox input:hover + .form__field-mark::after {
   opacity: 0.7;
 }
 
-.form__field--checkbox input:hover~.form__field-text {
+.form__field--checkbox input:hover ~ .form__field-text {
   color: $color-silver;
 }
 
-.form__field--checkbox input:active+.form__field-mark {
+.form__field--checkbox input:active + .form__field-mark {
   border-color: $color-dark-white;
 }
 
-.form__field--checkbox input:active+.form__field-mark::after {
+.form__field--checkbox input:active + .form__field-mark::after {
   opacity: 0.5;
 }
 
-.form__field--checkbox input:active~.form__field-text {
+.form__field--checkbox input:active ~ .form__field-text {
   color: $color-dark-white;
 }
 
