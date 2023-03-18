@@ -23,6 +23,7 @@
     content: "";
     z-index: -1;
     background-image: url("/img/main-background/main-background@1x.webp");
+    background-color: $color-deep-sky-blue-light;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -101,7 +102,7 @@
 }
 
 .main-screen__link {
-  display: block;
+  border: none;
   max-width: 410px;
   padding: 15px 25px;
   font-weight: 700;

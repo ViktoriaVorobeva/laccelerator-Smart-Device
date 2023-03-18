@@ -2,10 +2,13 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {breakpointChecker} from './modules/breakpoints';
+import {getScrollForm} from './modules/scroll';
 import {showMoreAbout, breakpointShowChecker} from './modules/about-company-show';
-import {breakpointCatalogChecker} from './modules/check-products';
-import {addAccordion} from './modules/accordion';
+import {initAccordions, accordions} from './modules/accordion/init-accordion';
 // ---------------------------------
+const formField = document.querySelector('.form__field--phone');
+const accordionElement = document.querySelector('.accordion');
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,17 +20,20 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   breakpointChecker();
+  getScrollForm();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    initAccordions();
+    accordions.closeAllAccordion(accordionElement);
     const form = new Form();
     window.form = form;
     form.init();
+    window.form.initPhoneInput(formField);
     breakpointShowChecker();
     showMoreAbout();
-    breakpointCatalogChecker();
-    addAccordion();
   });
 });
 

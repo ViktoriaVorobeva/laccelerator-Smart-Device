@@ -2,6 +2,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $color-black-pearl-lighter;
 
   &:first-child {
     background-image: url("/img/catalog/product-1@1x.webp");

@@ -24,7 +24,7 @@
   column-fill: auto;
 
   @include vp-1023 {
-    columns: none;
+    columns: 220px 1;
     height: auto;
   }
 }
