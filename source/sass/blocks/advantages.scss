@@ -3,14 +3,14 @@
   margin: 120px auto;
 
   @include vp-1023 {
-    margin-top: 80px;
+    margin-top: 85px;
     margin-bottom: 80px;
     max-width: 670px;
   }
 
   @include vp-767 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 270px;
   }
 }
@@ -35,6 +35,10 @@
 .advantages__icon {
   margin-bottom: 20px;
   fill: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
 }
 
 .advantages__title {
@@ -44,6 +48,10 @@
   line-height: 34px;
   font-weight: 400;
   color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 
   @include vp-767 {
     font-size: 20px;
@@ -86,12 +94,12 @@
   }
 
   @include vp-1023 {
-    padding: 40px 30px 35px 45px;
+    padding: 40px 35px 15px 40px;
     min-height: 360px;
   }
 
   @include vp-767 {
     padding: 30px 30px 35px;
-    min-height: 325px;
+    min-height: 335px;
   }
 }

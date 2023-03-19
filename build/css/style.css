@@ -1347,12 +1347,12 @@ button,
 .main-screen__container {
   max-width: 1160px;
   margin: 0 auto;
-  padding-left: 127px;
+  padding-left: 95px;
 }
 
 .main-screen__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -1496,7 +1496,7 @@ button,
 }
 
 .about-company__text:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .about-company__more {
@@ -1616,7 +1616,7 @@ button,
 
 .product__title {
   margin: 0;
-  max-width: 152px;
+  max-width: 150px;
   position: relative;
   font-weight: 400;
   font-size: 20px;
@@ -1653,15 +1653,15 @@ button,
   position: relative;
   background-color: #00b2ff;
   padding-top: 170px;
-  padding-bottom: 250px;
+  padding-bottom: 247px;
 }
 
 .feedback::before {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 840px solid rgba(4, 24, 39, 0.5);
-  border-right: 840px solid rgba(255, 255, 255, 0);
+  border-top: 842px solid rgba(4, 24, 39, 0.5);
+  border-right: 975px solid rgba(255, 255, 255, 0);
   content: "";
 }
 
@@ -1794,7 +1794,7 @@ button,
   border-radius: 3px;
   border: none;
   font-family: "PT Mono", monospace;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 }
 
 .form__field textarea::-webkit-input-placeholder {
@@ -1893,7 +1893,7 @@ button,
 }
 
 .form button {
-  padding: 15px 25px;
+  padding: 12px 25px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -2222,7 +2222,7 @@ button,
 }
 
 .accordion__link:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .accordion__link.focus-visible:focus {
@@ -2312,7 +2312,7 @@ button,
   }
 
   .main-screen {
-    padding-top: 170px;
+    padding-top: 180px;
     padding-bottom: 205px;
   }
 
@@ -2329,7 +2329,7 @@ button,
   .main-screen__title {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .main-screen__text {
@@ -2343,7 +2343,7 @@ button,
   }
 
   .advantages {
-    margin-top: 80px;
+    margin-top: 85px;
     margin-bottom: 80px;
     max-width: 670px;
   }
@@ -2353,15 +2353,27 @@ button,
     grid-template-columns: repeat(2, 320px);
   }
 
+  .advantages__icon {
+    margin-bottom: 5px;
+  }
+
+  .advantages__title {
+    margin-bottom: 10px;
+  }
+
   .advantages__item {
-    padding: 40px 30px 35px 45px;
+    padding: 40px 35px 15px 40px;
     min-height: 360px;
   }
 
   .about-company {
-    margin-bottom: 80px;
+    margin-bottom: 83px;
     max-width: 674px;
     padding-left: 179px;
+  }
+
+  .about-company__title {
+    margin-bottom: 10px;
   }
 
   .about-company__text-container {
@@ -2369,12 +2381,16 @@ button,
   }
 
   .catalog {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 75px;
   }
 
   .catalog__container {
     max-width: 670px;
+  }
+
+  .catalog__text {
+    margin-bottom: 38px;
   }
 
   .catalog__list {
@@ -2427,8 +2443,8 @@ button,
   }
 
   .feedback {
-    padding-top: 50px;
-    padding-bottom: 125px;
+    padding-top: 45px;
+    padding-bottom: 120px;
   }
 
   .feedback__container::before {
@@ -2451,7 +2467,7 @@ button,
   }
 
   .feedback__text {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .form {
@@ -2462,8 +2478,16 @@ button,
     width: 320px;
   }
 
+  .form__field textarea {
+    margin-bottom: 28px;
+    padding: 32px 15px;
+  }
+
   .form__field-wrapper {
     max-width: 610px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .footer__wrapper {
@@ -2555,7 +2579,7 @@ button,
   }
 
   .main-screen {
-    padding-top: 137px;
+    padding-top: 150px;
     padding-bottom: 190px;
   }
 
@@ -2571,24 +2595,26 @@ button,
   .main-screen__title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 10px;
   }
 
   .main-screen__text {
     max-width: 271px;
     font-size: 14px;
+    margin-bottom: 45px;
   }
 
   .main-screen__link {
     padding: 10px 30px;
     margin-left: 0;
-    max-width: 270px;
+    width: 100%;
     font-size: 14px;
     line-height: 16px;
   }
 
   .advantages {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 270px;
   }
 
@@ -2608,7 +2634,7 @@ button,
 
   .advantages__item {
     padding: 30px 30px 35px;
-    min-height: 325px;
+    min-height: 335px;
   }
 
   .about-company::before {
@@ -2618,6 +2644,7 @@ button,
   .about-company {
     max-width: 270px;
     padding-left: 0;
+    margin-bottom: 70px;
   }
 
   .about-company__title {
@@ -2626,7 +2653,7 @@ button,
   }
 
   .about-company__text:not(:last-child) {
-    margin-bottom: 29px;
+    margin-bottom: 20px;
   }
 
   .about-company__text {
@@ -2639,12 +2666,13 @@ button,
   }
 
   .about-company__button {
-    max-width: 160px;
+    min-width: 160px;
     padding: 8px 15px 12px;
   }
 
   .catalog {
     padding-bottom: 86px;
+    padding-top: 46px;
   }
 
   .catalog__container {
@@ -2654,7 +2682,7 @@ button,
   .catalog__text {
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     max-width: 200px;
   }
 
@@ -2683,6 +2711,7 @@ button,
 
   .product__title {
     font-size: 18px;
+    max-width: 135px;
   }
 
   .product__button {
@@ -2691,7 +2720,7 @@ button,
   }
 
   .feedback {
-    padding-bottom: 90px;
+    padding-bottom: 88px;
   }
 
   .feedback__container {
@@ -2705,7 +2734,7 @@ button,
   .feedback__title {
     display: block;
     max-width: 270px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -2713,7 +2742,7 @@ button,
   .feedback__text {
     display: block;
     max-width: 270px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -2738,7 +2767,7 @@ button,
   .form__field textarea {
     height: 180px;
     padding: 25px 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .form button {
@@ -2769,7 +2798,7 @@ button,
 
   .footer__wrapper {
     max-width: 269px;
-    padding-top: 35px;
+    padding-top: 40px;
     padding-bottom: 55px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2790,7 +2819,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .socials::after {
@@ -2805,12 +2834,12 @@ button,
   }
 
   .socials__logo {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
 
   .navigation {
     max-width: 269px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 
   .contacts {
@@ -2880,6 +2909,10 @@ button,
 
   .is-active .accordion__button::before {
     display: none;
+  }
+
+  .accordion__link {
+    font-size: 14px;
   }
 }
 

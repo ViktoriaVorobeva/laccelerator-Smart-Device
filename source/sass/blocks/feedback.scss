@@ -2,14 +2,14 @@
   position: relative;
   background-color: $color-deep-sky-blue;
   padding-top: 170px;
-  padding-bottom: 250px;
+  padding-bottom: 247px;
 
   &::before {
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 840px solid $color-black-pearl-lighter;
-    border-right: 840px solid $color-transparent;
+    border-top: 842px solid $color-black-pearl-lighter;
+    border-right: 975px solid $color-transparent;
     content: "";
 
     @include vp-1023 {
@@ -18,12 +18,12 @@
   }
 
   @include vp-1023 {
-    padding-top: 50px;
-    padding-bottom: 125px;
+    padding-top: 45px;
+    padding-bottom: 120px;
   }
 
   @include vp-767 {
-    padding-bottom: 90px;
+    padding-bottom: 88px;
   }
 }
 
@@ -93,7 +93,7 @@
   @include vp-767 {
     display: block;
     max-width: 270px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -108,13 +108,13 @@
   color: $color-default-white;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   @include vp-767 {
     display: block;
     max-width: 270px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     font-size: 14px;
     line-height: 19px;
   }
