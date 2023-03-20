@@ -29,6 +29,12 @@
   }
 }
 
+@include vp-767 {
+  .is-active .navigation__list {
+    min-height: 200px;
+  }
+}
+
 .navigation__link {
   margin-bottom: 10px;
 
