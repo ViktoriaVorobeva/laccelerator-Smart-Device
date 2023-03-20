@@ -27,11 +27,15 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initAccordions();
-    accordions.closeAllAccordion(accordionElement);
+    if (accordionElement) {
+      accordions.closeAllAccordion(accordionElement);
+    }
     const form = new Form();
     window.form = form;
     form.init();
-    window.form.initPhoneInput(formField);
+    if (formField) {
+      window.form.initPhoneInput(formField);
+    }
     breakpointShowChecker();
     showMoreAbout();
   });

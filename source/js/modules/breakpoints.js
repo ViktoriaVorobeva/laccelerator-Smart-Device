@@ -3,11 +3,14 @@ const mainScreenButton = document.querySelector('.main-screen__link');
 const catalogText = document.querySelector('.catalog__text');
 
 const breakpointChecker = () => {
-  if (breakpoint.matches) {
+  if (mainScreenButton && breakpoint.matches) {
     mainScreenButton.textContent = 'бесплатная консультация';
-    catalogText.textContent = 'Товары и услуги Smart Device';
   } else {
     mainScreenButton.textContent = 'Получить бесплатную консультацию';
+  }
+  if (catalogText && breakpoint.matches) {
+    catalogText.textContent = 'Товары и услуги Smart Device';
+  } else {
     catalogText.textContent = 'Smart Device предлагает следующие товары и услуги';
   }
 };
