@@ -78,3 +78,10 @@
 .socials__link:active .socials__link-icon {
   opacity: 0.5;
 }
+
+.socials__icon {
+  @include vp-767 {
+  width: 55px;
+  height: 55px;
+  }
+}
