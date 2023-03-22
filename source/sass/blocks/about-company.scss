@@ -1,6 +1,18 @@
 .about-company {
+  margin-bottom: 130px;
+
+  @include vp-1023 {
+    margin-bottom: 83px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 70px;
+  }
+}
+
+.about-company__wrapper {
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   max-width: 1220px;
   padding-left: 252px;
 
@@ -25,7 +37,6 @@
   }
 
   @include vp-1023 {
-    margin-bottom: 83px;
     max-width: 674px;
     padding-left: 179px;
   }
@@ -33,7 +44,6 @@
   @include vp-767 {
     max-width: 270px;
     padding-left: 0;
-    margin-bottom: 70px;
   }
 }
 

@@ -1202,7 +1202,7 @@ button,
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
   top: 0;
-  left: 0;
+  left: -3%;
   right: 0;
   z-index: 5;
 }
@@ -1395,8 +1395,13 @@ button,
 }
 
 .advantages {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.advantages__wrapper {
   max-width: 1222px;
-  margin: 120px auto;
+  margin: 0 auto;
 }
 
 .advantages__list {
@@ -1405,8 +1410,8 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (595px)[2];
-  grid-template-columns: repeat(2, 595px);
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -1456,13 +1461,17 @@ button,
 }
 
 .about-company {
+  margin-bottom: 130px;
+}
+
+.about-company__wrapper {
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   max-width: 1220px;
   padding-left: 252px;
 }
 
-.about-company::before {
+.about-company__wrapper::before {
   position: absolute;
   width: 150px;
   height: 320px;
@@ -2165,9 +2174,9 @@ button,
   padding: 0;
   list-style-type: none;
   height: 138px;
-  -webkit-columns: 220px 2;
-  -moz-columns: 220px 2;
-  columns: 220px 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
@@ -2283,6 +2292,10 @@ button,
     padding: 0 24px;
   }
 
+  .header {
+    left: -20px;
+  }
+
   .header__wrapper {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -2343,6 +2356,9 @@ button,
   .advantages {
     margin-top: 85px;
     margin-bottom: 80px;
+  }
+
+  .advantages__wrapper {
     max-width: 670px;
   }
 
@@ -2366,6 +2382,9 @@ button,
 
   .about-company {
     margin-bottom: 83px;
+  }
+
+  .about-company__wrapper {
     max-width: 674px;
     padding-left: 179px;
   }
@@ -2443,7 +2462,7 @@ button,
 
   .feedback {
     padding-top: 45px;
-    padding-bottom: 120px;
+    padding-bottom: 127px;
   }
 
   .feedback__container::before {
@@ -2491,7 +2510,7 @@ button,
 
   .footer__wrapper {
     max-width: 675px;
-    padding-bottom: 65px;
+    padding-bottom: 47px;
   }
 
   .footer__container {
@@ -2528,9 +2547,9 @@ button,
   }
 
   .navigation__list {
-    -webkit-columns: 220px 1;
-    -moz-columns: 220px 1;
-    columns: 220px 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
     height: auto;
   }
 
@@ -2556,10 +2575,17 @@ button,
     padding: 0 16px;
   }
 
+  .header {
+    left: -8px;
+  }
+
   .header__wrapper {
     max-width: 259px;
     padding-top: 10px;
     padding-bottom: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .logo__icon {
@@ -2614,12 +2640,22 @@ button,
   .advantages {
     margin-top: 50px;
     margin-bottom: 40px;
+  }
+
+  .advantages__wrapper {
     max-width: 270px;
   }
 
   .advantages__list {
     -ms-grid-columns: 270px;
     grid-template-columns: 270px;
+  }
+
+  .advantages__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 17px;
   }
 
   .advantages h3 {
@@ -2632,18 +2668,21 @@ button,
   }
 
   .advantages__item {
-    padding: 30px 30px 35px;
+    padding: 30px 30px 35px 26px;
     min-height: 335px;
   }
 
-  .about-company::before {
+  .about-company {
+    margin-bottom: 70px;
+  }
+
+  .about-company__wrapper::before {
     display: none;
   }
 
-  .about-company {
+  .about-company__wrapper {
     max-width: 270px;
     padding-left: 0;
-    margin-bottom: 70px;
   }
 
   .about-company h2 {
@@ -2794,7 +2833,7 @@ button,
 
   .footer__wrapper {
     max-width: 269px;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 55px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2815,7 +2854,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .socials::after {
@@ -2823,7 +2862,7 @@ button,
     width: 1000%;
     height: 1px;
     content: "";
-    bottom: -28px;
+    bottom: -23px;
     left: -498px;
     right: 0;
     background-color: rgba(248, 253, 255, 0.7);
@@ -3068,7 +3107,7 @@ button,
     background-image: url("/img/main-background/main-background@2x.webp");
   }
 
-  .about-company::before {
+  .about-company__wrapper::before {
     background-image: url("/img/about-company@2x.webp");
   }
 

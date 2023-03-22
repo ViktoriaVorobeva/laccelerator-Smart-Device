@@ -16,14 +16,14 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 
     &::after {
       position: absolute;
       width: 1000%;
       height: 1px;
       content: "";
-      bottom: -28px;
+      bottom: -23px;
       left: -498px;
       right: 0;
       background-color: $color-alice-blue-lighter;

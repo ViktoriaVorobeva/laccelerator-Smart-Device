@@ -19,12 +19,13 @@
   padding: 0;
   list-style-type: none;
   height: 138px;
-  columns: 220px 2;
+  // column-width: 220px;
+  column-count: 2;
   column-gap: 30px;
   column-fill: auto;
 
   @include vp-1023 {
-    columns: 220px 1;
+    column-count: 1;
     height: auto;
   }
 }
