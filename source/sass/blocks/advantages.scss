@@ -41,7 +41,7 @@
   }
 }
 
-.advantages__title {
+.advantages h3 {
   margin: 0;
   margin-bottom: 15px;
   font-size: 24px;
@@ -59,7 +59,7 @@
   }
 }
 
-.advantages__text {
+.advantages p {
   margin: 0;
   font-family: $ff-addition;
   font-size: 16px;
@@ -84,11 +84,11 @@
       fill: $color-alice-blue;
     }
 
-    .advantages__title {
+    h3 {
       color: $color-alice-blue;
     }
 
-    .advantages__text {
+    p {
       color: $color-alice-blue;
     }
   }

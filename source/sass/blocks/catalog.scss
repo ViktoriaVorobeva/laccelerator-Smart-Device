@@ -27,11 +27,12 @@
   }
 }
 
-.catalog__text {
+.catalog h2 {
   margin: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 51px;
+  font-weight: 400;
   color: $color-default-white;
 
   @include vp-1023 {

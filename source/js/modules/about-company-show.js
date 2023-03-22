@@ -1,6 +1,6 @@
 const showMoreButton = document.querySelector('.about-company__button');
 const showMoreText = document.querySelector('.about-company__more');
-const showMoreTextAdd = document.querySelector('.about-company__text-mobile');
+const showMoreTextAdd = document.querySelector('.about-company span');
 const stylesShowMoreText = window.getComputedStyle(showMoreText);
 const breakpoint = window.matchMedia('(max-width:767px)');
 
