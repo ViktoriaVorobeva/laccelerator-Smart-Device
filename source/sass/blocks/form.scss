@@ -20,6 +20,10 @@
   &--phone {
     margin-right: 0;
   }
+
+  @include vp-767 {
+    margin-right: 0;
+  }
 }
 
 .form__field input {
@@ -103,6 +107,7 @@
 .form__field--checkbox {
   position: relative;
   width: 260px;
+  margin-right: 0;
 }
 
 .form__field--checkbox input {
@@ -194,6 +199,10 @@
     background-color: $color-black-pearl-lighter;
   }
 
+  @include vp-1023 {
+    margin-right: 85px;
+  }
+
   @include vp-767 {
     width: 100%;
     margin-bottom: 25px;
@@ -207,6 +216,7 @@
 
   @include vp-1023 {
     align-items: center;
+    justify-content: flex-start;
   }
 
   @include vp-767 {

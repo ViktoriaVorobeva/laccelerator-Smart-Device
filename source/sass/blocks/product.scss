@@ -16,6 +16,10 @@
     width: 100%;
   }
 
+  @include vp-767 {
+    max-width: 84vw;
+  }
+
   &:first-child {
     background-image: image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
 

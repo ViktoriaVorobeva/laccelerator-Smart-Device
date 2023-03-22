@@ -3,13 +3,17 @@
   margin-right: 30px;
   position: relative;
 
-  @include vp-1023 {
+  @include vp-1279 {
+    width: 39vw;
     margin-right: 0;
+  }
+
+  @include vp-1023 {
+    width: 220px;
   }
 
   @include vp-767 {
     margin-bottom: 43px;
-    max-width: 100%;
   }
 }
 
@@ -22,6 +26,11 @@
   column-count: 2;
   column-gap: 30px;
   column-fill: auto;
+
+  @include vp-1279 {
+    column-gap: 10px;
+    column-width: 150px;
+  }
 
   @include vp-1023 {
     column-count: 1;

@@ -18,6 +18,10 @@
   margin: 0 auto;
   max-width: 1220px;
   width: 100vw;
+
+  @include vp-1023 {
+    width: 87vw;
+  }
 }
 
 .catalog h2 {

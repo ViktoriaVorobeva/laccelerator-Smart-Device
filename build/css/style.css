@@ -1701,6 +1701,7 @@ button,
   top: 76px;
   left: 0;
   background-image: url("/img/paper_airplane@1x.webp");
+  background-repeat: no-repeat;
   background-size: contain;
   content: "";
 }
@@ -1849,6 +1850,7 @@ button,
 .form__field--checkbox {
   position: relative;
   width: 260px;
+  margin-right: 0;
 }
 
 .form__field--checkbox input {
@@ -2320,30 +2322,44 @@ button,
     width: 100%;
   }
 
-  .feedback::before {
-    display: none;
-  }
-
   .feedback__container::before {
-    display: none;
+    width: 35vw;
   }
 
   .feedback__wrapper {
-    width: 100%;
+    width: 54vw;
   }
 
   .form__field input {
     width: 100%;
   }
 
+  .footer__wrapper {
+    width: 94vw;
+  }
+
   .socials {
-    margin-bottom: 50px;
+    margin-right: 3px;
+  }
+
+  .navigation {
+    width: 39vw;
+    margin-right: 0;
+  }
+
+  .navigation__list {
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 50px;
   }
 
   .header__wrapper {
@@ -2352,6 +2368,7 @@ button,
     align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 25px;
+    padding-right: 20px;
   }
 
   .header__contacts-link:not(:last-child) {
@@ -2445,6 +2462,10 @@ button,
     padding-bottom: 75px;
   }
 
+  .catalog__container {
+    width: 87vw;
+  }
+
   .catalog h2 {
     margin-bottom: 38px;
   }
@@ -2500,15 +2521,27 @@ button,
     display: none;
   }
 
+  .feedback::before {
+    display: none;
+  }
+
   .feedback {
     padding-top: 45px;
     padding-bottom: 127px;
+  }
+
+  .feedback__container::before {
+    display: none;
   }
 
   .feedback__container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .feedback__wrapper {
+    width: 87vw;
   }
 
   .feedback__title {
@@ -2524,14 +2557,22 @@ button,
     padding: 32px 15px;
   }
 
+  .form button {
+    margin-right: 85px;
+  }
+
   .form__field-wrapper {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .footer__wrapper {
     padding-bottom: 47px;
+    width: 87vw;
   }
 
   .footer__container {
@@ -2563,7 +2604,7 @@ button,
   }
 
   .navigation {
-    margin-right: 0;
+    width: 220px;
   }
 
   .navigation__list {
@@ -2592,7 +2633,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 25px;
   }
 
   .header__wrapper {
@@ -2601,6 +2642,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-right: 10px;
   }
 
   .logo__icon {
@@ -2731,6 +2773,10 @@ button,
     max-width: 200px;
   }
 
+  .product {
+    max-width: 84vw;
+  }
+
   .product:first-child {
     background-image: -webkit-image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
     background-image: image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
@@ -2765,6 +2811,11 @@ button,
     padding-bottom: 88px;
   }
 
+  .feedback__wrapper {
+    max-width: 84vw;
+    width: 100%;
+  }
+
   .feedback__title {
     display: block;
     margin-bottom: 10px;
@@ -2789,6 +2840,10 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 0;
+  }
+
+  .form__field {
+    margin-right: 0;
   }
 
   .form__field input {
@@ -2833,6 +2888,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 84vw;
   }
 
   .footer__container {
@@ -2872,7 +2928,6 @@ button,
 
   .navigation {
     margin-bottom: 43px;
-    max-width: 100%;
   }
 
   .is-active .navigation__list {
