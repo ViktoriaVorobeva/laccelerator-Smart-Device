@@ -1338,7 +1338,7 @@ button,
   height: 880px;
   content: "";
   z-index: -1;
-  background-image: url("/img/main-background/main-background@1x.webp");
+  background-image: url("../img/main-background/main-background@1x.webp");
   background-color: rgba(0, 178, 255, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1481,7 +1481,7 @@ button,
   height: 320px;
   top: 0;
   left: 0;
-  background-image: url("/img/about-company@1x.webp");
+  background-image: url("../img/about-company@1x.webp");
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
@@ -1590,18 +1590,18 @@ button,
 }
 
 .product:first-child {
-  background-image: -webkit-image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
-  background-image: image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
+  background-image: -webkit-image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
+  background-image: image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
 }
 
 .product:nth-child(2n) {
-  background-image: -webkit-image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
-  background-image: image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
+  background-image: -webkit-image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
+  background-image: image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
 }
 
 .product:last-child {
-  background-image: -webkit-image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
-  background-image: image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
+  background-image: -webkit-image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
+  background-image: image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
 }
 
 .product::before {
@@ -1651,7 +1651,7 @@ button,
   height: 60px;
   padding: 0;
   border: 0;
-  background-image: url("/img/catalog/arrow.svg");
+  background-image: url("../img/catalog/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   cursor: pointer;
@@ -1700,7 +1700,7 @@ button,
   height: 285px;
   top: 76px;
   left: 0;
-  background-image: url("/img/paper_airplane@1x.webp");
+  background-image: url("../img/paper_airplane@1x.webp");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -1869,7 +1869,7 @@ button,
 
 .form__field--checkbox input:checked + .form__field-mark::after {
   position: absolute;
-  background-image: url("/img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   top: 3px;
   left: 1px;
   width: 9px;
@@ -2488,18 +2488,18 @@ button,
   }
 
   .product:first-child {
-    background-image: -webkit-image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
   }
 
   .product:nth-child(2n) {
-    background-image: -webkit-image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-2-tablet@1x.webp") 1x, url("../img/catalog/product-2-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-2-tablet@1x.webp") 1x, url("../img/catalog/product-2-tablet@2x.webp") 2x);
   }
 
   .product:last-child {
-    background-image: -webkit-image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-3-tablet@1x.webp") 1x, url("../img/catalog/product-3-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-3-tablet@1x.webp") 1x, url("../img/catalog/product-3-tablet@2x.webp") 2x);
   }
 
   .product::before {
@@ -2778,18 +2778,18 @@ button,
   }
 
   .product:first-child {
-    background-image: -webkit-image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
   }
 
   .product:nth-child(2n) {
-    background-image: -webkit-image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-2-phone@1x.webp") 1x, url("../img/catalog/product-2-phone@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-2-phone@1x.webp") 1x, url("../img/catalog/product-2-phone@2x.webp") 2x);
   }
 
   .product:last-child {
-    background-image: -webkit-image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
-    background-image: image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../img/catalog/product-3-phone@1x.webp") 1x, url("../img/catalog/product-3-phone@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-3-phone@1x.webp") 1x, url("../img/catalog/product-3-phone@2x.webp") 2x);
   }
 
   .product__link {
@@ -3155,14 +3155,14 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-screen::before {
-    background-image: url("/img/main-background/main-background@2x.webp");
+    background-image: url("../img/main-background/main-background@2x.webp");
   }
 
   .about-company__wrapper::before {
-    background-image: url("/img/about-company@2x.webp");
+    background-image: url("../img/about-company@2x.webp");
   }
 
   .feedback__container::before {
-    background-image: url("/img/paper_airplane@2x.webp");
+    background-image: url("../img/paper_airplane@2x.webp");
   }
 }

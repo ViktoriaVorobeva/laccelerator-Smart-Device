@@ -21,38 +21,38 @@
   }
 
   &:first-child {
-    background-image: image-set(url("/img/catalog/product-1@1x.webp") 1x, url("/img/catalog/product-1@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-1@1x.webp") 1x, url("../img/catalog/product-1@2x.webp") 2x);
 
     @include vp-1023 {
-      background-image: image-set(url("/img/catalog/product-1-tablet@1x.webp") 1x, url("/img/catalog/product-1-tablet@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-1-tablet@1x.webp") 1x, url("../img/catalog/product-1-tablet@2x.webp") 2x);
     }
 
     @include vp-767 {
-      background-image: image-set(url("/img/catalog/product-1-phone@1x.webp") 1x, url("/img/catalog/product-1-phone@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-1-phone@1x.webp") 1x, url("../img/catalog/product-1-phone@2x.webp") 2x);
     }
   }
 
   &:nth-child(2n) {
-    background-image: image-set(url("/img/catalog/product-2@1x.webp") 1x, url("/img/catalog/product-2@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-2@1x.webp") 1x, url("../img/catalog/product-2@2x.webp") 2x);
 
     @include vp-1023 {
-      background-image: image-set(url("/img/catalog/product-2-tablet@1x.webp") 1x, url("/img/catalog/product-2-tablet@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-2-tablet@1x.webp") 1x, url("../img/catalog/product-2-tablet@2x.webp") 2x);
     }
 
     @include vp-767 {
-      background-image: image-set(url("/img/catalog/product-2-phone@1x.webp") 1x, url("/img/catalog/product-2-phone@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-2-phone@1x.webp") 1x, url("../img/catalog/product-2-phone@2x.webp") 2x);
     }
   }
 
   &:last-child {
-    background-image: image-set(url("/img/catalog/product-3@1x.webp") 1x, url("/img/catalog/product-3@2x.webp") 2x);
+    background-image: image-set(url("../img/catalog/product-3@1x.webp") 1x, url("../img/catalog/product-3@2x.webp") 2x);
 
     @include vp-1023 {
-      background-image: image-set(url("/img/catalog/product-3-tablet@1x.webp") 1x, url("/img/catalog/product-3-tablet@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-3-tablet@1x.webp") 1x, url("../img/catalog/product-3-tablet@2x.webp") 2x);
     }
 
     @include vp-767 {
-      background-image: image-set(url("/img/catalog/product-3-phone@1x.webp") 1x, url("/img/catalog/product-3-phone@2x.webp") 2x);
+      background-image: image-set(url("../img/catalog/product-3-phone@1x.webp") 1x, url("../img/catalog/product-3-phone@2x.webp") 2x);
     }
   }
 
@@ -135,7 +135,7 @@
   height: 60px;
   padding: 0;
   border: 0;
-  background-image: url("/img/catalog/arrow.svg");
+  background-image: url("../img/catalog/arrow.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   cursor: pointer;

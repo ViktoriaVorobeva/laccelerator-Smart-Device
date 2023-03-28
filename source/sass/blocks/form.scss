@@ -126,7 +126,7 @@
 
 .form__field--checkbox input:checked + .form__field-mark::after {
   position: absolute;
-  background-image: url("/img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
   top: 3px;
   left: 1px;
   width: 9px;

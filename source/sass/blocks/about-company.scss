@@ -22,13 +22,13 @@
     height: 320px;
     top: 0;
     left: 0;
-    background-image: url("/img/about-company@1x.webp");
+    background-image: url("../img/about-company@1x.webp");
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
 
     @include retina {
-      background-image: url("/img/about-company@2x.webp");
+      background-image: url("../img/about-company@2x.webp");
     }
 
     @include vp-767 {

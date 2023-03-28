@@ -40,13 +40,13 @@
     height: 285px;
     top: 76px;
     left: 0;
-    background-image: url("/img/paper_airplane@1x.webp");
+    background-image: url("../img/paper_airplane@1x.webp");
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
 
     @include retina {
-      background-image: url("/img/paper_airplane@2x.webp");
+      background-image: url("../img/paper_airplane@2x.webp");
     }
 
     @include vp-1279 {
