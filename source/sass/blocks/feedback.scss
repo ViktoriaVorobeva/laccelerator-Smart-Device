@@ -110,14 +110,6 @@
   line-height: 22px;
   color: $color-default-white;
 
-  br {
-    display: none;
-
-    @include vp-767 {
-      display: block;
-    }
-  }
-
   @include vp-1023 {
     margin-bottom: 22px;
   }

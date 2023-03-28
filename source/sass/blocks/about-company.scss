@@ -116,6 +116,7 @@
   background-color: $color-transparent;
   color: $color-deep-sky-blue;
   cursor: pointer;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-deep-sky-blue;

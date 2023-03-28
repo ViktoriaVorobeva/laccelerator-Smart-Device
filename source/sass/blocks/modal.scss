@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-box-shadow-dark;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -147,4 +147,5 @@
 .modal__form button {
   width: 100%;
   margin-bottom: 20px;
+  user-select: none;
 }
