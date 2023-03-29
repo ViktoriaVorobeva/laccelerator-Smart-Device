@@ -1,16 +1,15 @@
 .main-screen {
   position: relative;
   padding-top: 305px;
-  padding-bottom: 280px;
+  padding-bottom: 287px;
   background-image: $black-pearl-to-bottom;
 
   @include vp-1023 {
-    padding-top: 180px;
-    padding-bottom: 205px;
+    padding-top: 80px;
+    padding-bottom: 209px;
   }
 
   @include vp-767 {
-    padding-top: 150px;
     padding-bottom: 190px;
   }
 
@@ -32,12 +31,10 @@
     }
 
     @include vp-1023 {
-      height: 640px;
       background-position: -123px 0;
     }
 
     @include vp-767 {
-      height: 560px;
       background-position: -229px 0;
     }
   }
@@ -66,7 +63,7 @@
   @include vp-1023 {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 
   @include vp-767 {
@@ -85,7 +82,7 @@
   color: $color-alice-blue;
 
   @include vp-1023 {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     font-size: 22px;
   }
 

@@ -24,18 +24,17 @@
   padding: 0;
   list-style-type: none;
   height: 138px;
-  column-width: 220px;
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  column-fill: auto;
 
   @include vp-1279 {
-    column-gap: 10px;
-    column-width: 150px;
+    gap: 10px;
   }
 
   @include vp-1023 {
-    column-count: 1;
+    grid-template-columns: 1fr;
+    gap: 0;
     height: auto;
   }
 }
@@ -48,6 +47,10 @@
 
 .navigation__link {
   margin-bottom: 10px;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
 
   &:nth-child(4n) {
     margin-bottom: 0;

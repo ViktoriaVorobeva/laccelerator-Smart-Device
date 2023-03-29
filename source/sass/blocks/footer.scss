@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 53px;
   padding-bottom: 55px;
   width: 100vw;
 
@@ -16,13 +16,13 @@
   }
 
   @include vp-1023 {
-    padding-bottom: 47px;
+    padding-bottom: 53px;
     width: 87vw;
   }
 
   @include vp-767 {
     padding-top: 35px;
-    padding-bottom: 55px;
+    padding-bottom: 65px;
     flex-direction: column;
     width: 84vw;
   }

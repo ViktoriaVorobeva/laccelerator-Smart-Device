@@ -2,7 +2,7 @@
   position: relative;
   background-color: $color-deep-sky-blue;
   padding-top: 170px;
-  padding-bottom: 247px;
+  padding-bottom: 252px;
 
   &::before {
     position: absolute;
@@ -67,6 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding-right: 6px;
 
   @include vp-1279 {
     width: 54vw;
@@ -74,6 +75,7 @@
 
   @include vp-1023 {
     width: 87vw;
+    padding-right: 0;
   }
 
   @include vp-767 {
@@ -84,7 +86,7 @@
 
 .feedback__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
