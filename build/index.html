@@ -164,13 +164,13 @@
                   <div class="form__field-container">
                     <div class="form__field" data-validate-type="text" data-required data-message-base="Введите имя">
                       <label>
-                        <input name="name" id="name" type="text" placeholder="Имя">
+                        <input name="name" id="name" type="text" placeholder="Имя" autocomplete="off">
                       </label>
                     </div>
                     <div class="form__field form__field--phone" data-validate-type="phone" data-on-input-validate
                       data-required data-message-base="Введите номер телефона">
                       <label class="label">
-                        <input name="phone" id="phone" type="tel" placeholder="Телефон">
+                        <input name="phone" id="phone" type="tel" placeholder="Телефон" autocomplete="off">
                       </label>
                     </div>
                   </div>
@@ -301,18 +301,19 @@
         </button>
         <h2 class="modal__title">Закажите звонок</h2>
         <p class="modal__text">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
-        <div class="modal__form form">
+        <div class="modal__form form" data-form-validate="">
           <form method="post" action="https://echo.htmlacademy.ru">
             <div class="form__field-container form__field-container--modal">
-              <div class="form__field form__field--modal" data-required>
+              <div class="form__field form__field--modal" data-validate-type="text" data-required
+                data-message-base="Введите имя" data-required>
                 <label>
-                  <input name="user-name" id="user-name" type="text" placeholder="Имя" data-focus>
+                  <input name="user-name" id="user-name" type="text" placeholder="Имя" data-focus autocomplete="off">
                 </label>
               </div>
               <div class="form__field form__field--modal form__field--phone" data-validate-type="phone"
-                data-on-input-validate data-required>
+                data-on-input-validate data-required data-message-base="Введите номер телефона">
                 <label class="label">
-                  <input name="user-phone" id="user-phone" type="tel" placeholder="Телефон">
+                  <input name="user-phone" id="user-phone" type="tel" placeholder="Телефон" autocomplete="off">
                 </label>
               </div>
             </div>
@@ -323,7 +324,7 @@
             </div>
             <div class="form__field-wrapper form__field-wrapper--modal">
               <div class="form__field form__field--checkbox form__field--modal form__field--checkbox-modal"
-                data-required>
+                data-validate-type="checkbox" data-required data-message-base="Обязательный пункт" data-required>
                 <label>
                   <input name="user-agreement" id="user-agreement" type="checkbox" value="user-agreement" checked>
                   <span class="form__field-mark" tabindex="0"></span>

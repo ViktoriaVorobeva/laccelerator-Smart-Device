@@ -31,8 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
       accordions.closeAllAccordion(accordionElement);
     }
     const form = new Form();
-    window.form = form;
     form.init();
+    window.form = form;
     if (formField) {
       window.form.initPhoneInput(formField);
     }

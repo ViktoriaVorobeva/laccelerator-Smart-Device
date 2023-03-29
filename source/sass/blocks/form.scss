@@ -16,6 +16,7 @@
 .form__field {
   margin-right: 30px;
   width: 100%;
+  position: relative;
 
   &--phone {
     margin-right: 0;
@@ -235,4 +236,10 @@
   &--modal {
     flex-direction: column-reverse;
   }
+}
+
+.input-message {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }

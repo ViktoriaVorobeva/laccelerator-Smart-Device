@@ -30,6 +30,7 @@
 
 .footer__container {
   display: flex;
+  margin-left: auto;
 
   @include vp-1023 {
     width: 100%;
