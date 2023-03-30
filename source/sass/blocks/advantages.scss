@@ -9,7 +9,7 @@
 
   @include vp-767 {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
 
@@ -110,6 +110,12 @@
 
   @include vp-767 {
     padding: 30px 30px 35px 26px;
-    min-height: 325px;
+    min-height: 340px;
+  }
+
+  &--height {
+    @include vp-767 {
+      min-height: 325px;
+    }
   }
 }

@@ -2416,7 +2416,7 @@ button,
   }
 
   .main-screen {
-    padding-top: 80px;
+    padding-top: 180px;
     padding-bottom: 209px;
   }
 
@@ -2703,6 +2703,7 @@ button,
   }
 
   .main-screen {
+    padding-top: 150px;
     padding-bottom: 190px;
   }
 
@@ -2736,7 +2737,7 @@ button,
 
   .advantages {
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   .advantages__list {
@@ -2762,6 +2763,10 @@ button,
 
   .advantages__item {
     padding: 30px 30px 35px 26px;
+    min-height: 340px;
+  }
+
+  .advantages__item--height {
     min-height: 325px;
   }
 
@@ -2922,7 +2927,7 @@ button,
 
   .footer__wrapper {
     padding-top: 35px;
-    padding-bottom: 65px;
+    padding-bottom: 47px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2974,6 +2979,17 @@ button,
     margin-bottom: 43px;
   }
 
+  .navigation::after {
+    position: absolute;
+    width: 1000%;
+    height: 1px;
+    content: "";
+    bottom: -23px;
+    left: -498px;
+    right: 0;
+    background-color: rgba(248, 253, 255, 0.7);
+  }
+
   .is-active .navigation__list {
     min-height: 200px;
   }
@@ -2982,12 +2998,12 @@ button,
     margin-left: 0;
   }
 
-  .accordion::after {
+  .contacts::after {
     position: absolute;
     width: 1000%;
     height: 1px;
     content: "";
-    bottom: -23px;
+    bottom: -12px;
     left: -498px;
     right: 0;
     background-color: rgba(248, 253, 255, 0.7);

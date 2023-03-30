@@ -1,18 +1,3 @@
-.accordion {
-  @include vp-767 {
-    &::after {
-      position: absolute;
-      width: 1000%;
-      height: 1px;
-      content: "";
-      bottom: -23px;
-      left: -498px;
-      right: 0;
-      background-color: $color-alice-blue-lighter;
-    }
-  }
-}
-
 .accordion__title {
   margin: 0;
   margin-bottom: 24px;
