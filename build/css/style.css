@@ -2379,7 +2379,7 @@ button,
   }
 
   .header {
-    position: relative;
+    position: absolute;
   }
 
   .header__wrapper {
