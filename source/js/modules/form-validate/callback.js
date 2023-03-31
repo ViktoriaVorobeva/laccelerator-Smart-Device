@@ -1,48 +1,6 @@
-import {showErrorMessage, showSuccessMessage} from './sibmit-message';
-
-const submitButtonElement = document.querySelector('button[type="submit"]');
-
-const blockSubmitButton = () => {
-  submitButtonElement.disabled = true;
-};
-
-const unblockSubmitButton = () => {
-  submitButtonElement.disabled = false;
-};
-
-const sendData = (onSuccess, onFail, body) => {
-  fetch(
-      'https://echo.htmlacademy.ru',
-      {
-        method: 'POST',
-        body,
-      }
-  )
-      .then((response) => {
-        if (response.ok) {
-          onSuccess();
-        } else {
-          onFail();
-        }
-      })
-      .catch(() => {
-        onFail();
-      });
-};
-
-
 const baseSuccessCallback = (event) => {
   event.preventDefault();
-  blockSubmitButton();
-  sendData(() => {
-    unblockSubmitButton();
-    showSuccessMessage();
-  },
-  () => {
-    unblockSubmitButton();
-    showErrorMessage();
-  },
-  new FormData(event.target));
+  event.target.submit();
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
 };
 
