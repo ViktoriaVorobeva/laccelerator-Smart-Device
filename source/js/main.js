@@ -6,7 +6,6 @@ import {getScrollForm} from './modules/scroll';
 import {showMoreAbout, breakpointShowChecker} from './modules/about-company-show';
 import {initAccordions, accordions} from './modules/accordion/init-accordion';
 // ---------------------------------
-const formField = document.querySelector('.form__field--phone');
 const accordionElement = document.querySelector('.accordion');
 
 
@@ -33,9 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     form.init();
     window.form = form;
-    if (formField) {
-      window.form.initPhoneInput(formField);
-    }
     breakpointShowChecker();
     showMoreAbout();
   });

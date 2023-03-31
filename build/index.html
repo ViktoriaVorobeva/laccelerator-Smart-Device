@@ -23,14 +23,14 @@
           </a>
           <div class="header__contacts">
             <a class="header__contacts-link header__contacts-link--email" href="malito:info@sd.ru">
-              <svg class="header__contacts-link-icon" width="21" height="20">
+              <svg class="header__contacts-link-icon" width="21" height="20" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#header-email"></use>
               </svg>
               <span class="visually-hidden">Почта</span>
               <span class="header__contacts-link-text">info@sd.ru</span>
             </a>
             <a class="header__contacts-link header__contacts-link--phone" href="tel:+74950005252">
-              <svg class="header__contacts-link-icon" width="21" height="20">
+              <svg class="header__contacts-link-icon" width="21" height="20" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#header-phone-call"></use>
               </svg>
               <span class="visually-hidden">Номер телефона</span>
@@ -58,7 +58,7 @@
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35">
+                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#stopwatch"></use>
                 </svg>
                 <h3>Оперативные сроки</h3>
@@ -67,7 +67,7 @@
                 </p>
               </li>
               <li class="advantages__item">
-                <svg class="advantages__icon" width="35" height="35">
+                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#hired"></use>
                 </svg>
                 <h3>Крупные поставщики</h3>
@@ -76,14 +76,14 @@
                   продукции.</p>
               </li>
               <li class="advantages__item advantages__item--height">
-                <svg class="advantages__icon" width="35" height="35">
+                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#detective"></use>
                 </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>По&nbsp;желанию клиента мы обеспечиваем полную конфиденциальность.</p>
               </li>
               <li class="advantages__item advantages__item--height">
-                <svg class="advantages__icon" width="35" height="35">
+                <svg class="advantages__icon" width="35" height="35" aria-hidden="true" focusable="false">
                   <use href="img/sprite.svg#tag"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
@@ -214,7 +214,7 @@
             <ul class="socials__list">
               <li class="socials__item">
                 <a class="socials__link" href="#">
-                  <svg class="socials__link-icon" width="30" height="30">
+                  <svg class="socials__link-icon" width="30" height="30" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#ok"></use>
                   </svg>
                   <span class="visually-hidden">Одноклассники</span>
@@ -222,7 +222,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#">
-                  <svg class="socials__link-icon" width="30" height="30">
+                  <svg class="socials__link-icon" width="30" height="30" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
                   <span class="visually-hidden">ВКонтакте</span>
@@ -230,7 +230,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#">
-                  <svg class="socials__link-icon" width="30" height="30">
+                  <svg class="socials__link-icon" width="30" height="30" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#pinterest"></use>
                   </svg>
                   <span class="visually-hidden">Пинтрест</span>
@@ -301,7 +301,7 @@
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg class="modal__close-icon" width="20" height="20">
+          <svg class="modal__close-icon" width="20" height="20" aria-hidden="true" focusable="false">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -361,7 +361,25 @@
       </div>
     </div>
   </div>
+    <!-- Сообщение об ошибке при отправке формы -->
+  <template id="error">
+    <section class="error">
+      <div class="error__inner">
+        <h2 class="error__title">Ошибка отправки формы</h2>
+        <button type="button" class="error__button">Попробовать ещё раз</button>
+      </div>
+    </section>
+  </template>
 
+  <!-- Сообщение об успешной при отправке формы -->
+  <template id="success">
+    <section class="success">
+      <div class="success__inner">
+        <h2 class="success__title">Форма успешно отправлена</h2>
+        <button type="button" class="success__button">Круто!</button>
+      </div>
+    </section>
+  </template>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

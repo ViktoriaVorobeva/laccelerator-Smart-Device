@@ -1337,10 +1337,11 @@ button,
   height: 100%;
   content: "";
   z-index: -1;
-  background-image: url("../img/main-background/main-background@1x.webp");
   background-color: rgba(0, 178, 255, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: -webkit-image-set(url("../img/main-background/main-background@1x.webp") 1x, url("../img/main-background/main-background@2x.webp") 2x);
+  background-image: image-set(url("../img/main-background/main-background@1x.webp") 1x, url("../img/main-background/main-background@2x.webp") 2x);
 }
 
 .main-screen__container {
@@ -1627,6 +1628,10 @@ button,
   opacity: 0.7;
 }
 
+.product.focus-visible:focus .product__button {
+  opacity: 0.7;
+}
+
 .product:active {
   opacity: 0.5;
 }
@@ -1665,10 +1670,6 @@ button,
   background-position: 50%;
   z-index: 3;
   cursor: pointer;
-}
-
-.product.focus-visible:focus .product__button {
-  opacity: 0.7;
 }
 
 .feedback {
@@ -1948,6 +1949,10 @@ button,
 }
 
 .form button.focus-visible:focus {
+  background-color: rgba(4, 24, 39, 0.5);
+}
+
+.form button:disabled {
   background-color: rgba(4, 24, 39, 0.5);
 }
 
@@ -2286,6 +2291,95 @@ button,
   pointer-events: none;
 }
 
+.error,
+.success {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(4, 24, 39, 0.5);
+}
+
+.error__inner,
+.success__inner {
+  position: relative;
+  width: 600px;
+  padding: 50px 20px;
+  padding-top: 150px;
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #f2f5f6;
+  background-color: #00b2ff;
+  border-radius: 10px;
+}
+
+.error__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+.error__button,
+.success__button {
+  padding: 5px 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.error__button:hover,
+.error__button:focus,
+.success__button:hover,
+.success__button:focus {
+  opacity: 0.8;
+}
+
+.error__button:active,
+.success__button:active {
+  opacity: 0.6;
+}
+
+.success__inner {
+  padding: 100px 20px;
+  padding-bottom: 75px;
+}
+
+.success__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2421,7 +2515,8 @@ button,
   }
 
   .main-screen::before {
-    background-position: -123px 0;
+    background-image: -webkit-image-set(url("../img/main-background/main-background-tablet@1x.webp") 1x, url("../img/main-background/main-background-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/main-background/main-background-tablet@1x.webp") 1x, url("../img/main-background/main-background-tablet@2x.webp") 2x);
   }
 
   .main-screen__container {
@@ -2708,7 +2803,8 @@ button,
   }
 
   .main-screen::before {
-    background-position: -229px 0;
+    background-image: -webkit-image-set(url("../img/main-background/main-background-phone@1x.webp") 1x, url("../img/main-background/main-background-phone@2x.webp") 2x);
+    background-image: image-set(url("../img/main-background/main-background-phone@1x.webp") 1x, url("../img/main-background/main-background-phone@2x.webp") 2x);
   }
 
   .main-screen h2 {
@@ -3216,10 +3312,6 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .main-screen::before {
-    background-image: url("../img/main-background/main-background@2x.webp");
-  }
-
   .about-company__wrapper::before {
     background-image: url("../img/about-company@2x.webp");
   }

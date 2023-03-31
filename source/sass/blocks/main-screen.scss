@@ -22,21 +22,17 @@
     height: 100%;
     content: "";
     z-index: -1;
-    background-image: url("../img/main-background/main-background@1x.webp");
     background-color: $color-deep-sky-blue-light;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include retina {
-      background-image: url("../img/main-background/main-background@2x.webp");
-    }
+    background-image: image-set(url("../img/main-background/main-background@1x.webp") 1x, url("../img/main-background/main-background@2x.webp") 2x);
 
     @include vp-1023 {
-      background-position: -123px 0;
+      background-image: image-set(url("../img/main-background/main-background-tablet@1x.webp") 1x, url("../img/main-background/main-background-tablet@2x.webp") 2x);
     }
 
     @include vp-767 {
-      background-position: -229px 0;
+      background-image: image-set(url("../img/main-background/main-background-phone@1x.webp") 1x, url("../img/main-background/main-background-phone@2x.webp") 2x);
     }
   }
 }

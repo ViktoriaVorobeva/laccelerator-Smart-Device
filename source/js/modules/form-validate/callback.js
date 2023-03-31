@@ -1,33 +1,33 @@
+import {showErrorMessage, showSuccessMessage} from './sibmit-message';
+
 const submitButtonElement = document.querySelector('button[type="submit"]');
 
 const blockSubmitButton = () => {
   submitButtonElement.disabled = true;
-  submitButtonElement.textContent = 'Отправляю...';
 };
 
 const unblockSubmitButton = () => {
   submitButtonElement.disabled = false;
-  submitButtonElement.textContent = 'Задать вопрос';
 };
 
-const sendData = (onSuccess, body) => {
+const sendData = (onSuccess, onFail, body) => {
   fetch(
-    'https://echo.htmlacademy.ru',
-    {
-      method: 'POST',
-      body,
-    },
-)
-    .then((response) => {
-      if (response.ok) {
-        onSuccess();
-      } else {
-        alert('Не удалось отправить форму. Попробуйте ещё раз');
+      'https://echo.htmlacademy.ru',
+      {
+        method: 'POST',
+        body,
       }
-    })
-    .catch(() => {
-      alert('Не удалось отправить форму. Попробуйте ещё раз');
-    });
+  )
+      .then((response) => {
+        if (response.ok) {
+          onSuccess();
+        } else {
+          onFail();
+        }
+      })
+      .catch(() => {
+        onFail();
+      });
 };
 
 
@@ -35,8 +35,12 @@ const baseSuccessCallback = (event) => {
   event.preventDefault();
   blockSubmitButton();
   sendData(() => {
-    alert('Форма отправлена');
     unblockSubmitButton();
+    showSuccessMessage();
+  },
+  () => {
+    unblockSubmitButton();
+    showErrorMessage();
   },
   new FormData(event.target));
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
