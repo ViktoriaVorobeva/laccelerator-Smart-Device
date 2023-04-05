@@ -1848,7 +1848,7 @@ button,
 }
 
 .form__field--modal textarea {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .form__field--checkbox {
@@ -1883,6 +1883,7 @@ button,
 
 .form__field--checkbox-modal {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .form__field--phone input {
@@ -2107,7 +2108,6 @@ button,
 
 .modal__title {
   margin: 0;
-  margin-bottom: 15px;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
@@ -2116,6 +2116,7 @@ button,
 
 .modal__text {
   margin: 0;
+  max-width: 380px;
   margin-bottom: 40px;
   font-family: "PT Mono", monospace;
   font-size: 16px;

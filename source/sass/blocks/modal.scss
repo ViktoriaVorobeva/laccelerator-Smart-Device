@@ -128,7 +128,6 @@
 
 .modal__title {
   margin: 0;
-  margin-bottom: 15px;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
@@ -137,6 +136,7 @@
 
 .modal__text {
   margin: 0;
+  max-width: 380px;
   margin-bottom: 40px;
   font-family: $ff-addition;
   font-size: 16px;
