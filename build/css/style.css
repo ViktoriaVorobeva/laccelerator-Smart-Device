@@ -1239,7 +1239,7 @@ button,
   margin-bottom: 10px;
 }
 
-.header__contacts-item:not(:last-child) {
+.header__contacts-item:not(:nth-child(2n)) {
   margin-right: 30px;
 }
 
@@ -2164,7 +2164,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 53px;
-  padding-bottom: 55px;
+  padding-bottom: 45px;
   width: 100vw;
 }
 
@@ -2514,6 +2514,10 @@ button,
     margin-left: auto;
     width: auto;
     max-width: 245px;
+  }
+
+  .header__contacts-item:not(:nth-child(2n)) {
+    margin-right: 0;
   }
 
   .header__contacts-item:not(:last-child) {

@@ -59,13 +59,19 @@
 .header__contacts-item {
   margin-bottom: 10px;
 
-  &:not(:last-child) {
+  &:not(:nth-child(2n)) {
     margin-right: 30px;
 
     @include vp-1023 {
-      margin-right: 20px;
+      margin-right: 0;
     }
   }
+
+  &:not(:last-child) {
+    @include vp-1023 {
+      margin-right: 20px;
+    }
+ }
 }
 
 .header__contacts-link {
