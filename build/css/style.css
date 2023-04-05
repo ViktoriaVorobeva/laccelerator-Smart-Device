@@ -1229,6 +1229,18 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 480px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__contacts-item {
+  margin-bottom: 10px;
+}
+
+.header__contacts-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header__contacts-link {
@@ -1240,6 +1252,8 @@ button,
   align-items: center;
   min-width: 225px;
   cursor: pointer;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header__contacts-link.focus-visible:focus {
@@ -1552,7 +1566,7 @@ button,
 .catalog {
   background-color: #041827;
   padding-top: 66px;
-  padding-bottom: 143px;
+  padding-bottom: 68px;
 }
 
 .catalog__container {
@@ -1579,9 +1593,13 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.catalog__item {
+  margin-bottom: 75px;
 }
 
 .catalog__item:not(:nth-child(3n)) {
@@ -2222,7 +2240,6 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  height: 138px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2433,6 +2450,10 @@ button,
     left: 0;
   }
 
+  .logo {
+    margin-right: 8vw;
+  }
+
   .catalog__item:not(:nth-child(3n)) {
     margin-right: 75px;
   }
@@ -2491,6 +2512,12 @@ button,
 
   .header__contacts {
     margin-left: auto;
+    width: auto;
+    max-width: 245px;
+  }
+
+  .header__contacts-item:not(:last-child) {
+    margin-right: 20px;
   }
 
   .header__contacts-link:not(:last-child) {
@@ -2508,6 +2535,10 @@ button,
 
   .header__modal-button {
     display: none;
+  }
+
+  .logo {
+    margin-right: 160px;
   }
 
   .main-screen {
@@ -2584,7 +2615,7 @@ button,
 
   .catalog {
     padding-top: 55px;
-    padding-bottom: 75px;
+    padding-bottom: 45px;
   }
 
   .catalog__container {
@@ -2602,9 +2633,12 @@ button,
     flex-direction: column;
   }
 
+  .catalog__item {
+    margin-bottom: 30px;
+  }
+
   .catalog__item:not(:nth-child(3n)) {
     margin-right: 0;
-    margin-bottom: 30px;
   }
 
   .product {
@@ -2899,7 +2933,7 @@ button,
   }
 
   .catalog {
-    padding-bottom: 86px;
+    padding-bottom: 56px;
     padding-top: 46px;
   }
 
